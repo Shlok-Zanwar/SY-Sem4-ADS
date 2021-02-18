@@ -229,7 +229,7 @@ public class BST {
                 tree.printTree(5);
             }
             
-
+            input.close();
 
         }
 
