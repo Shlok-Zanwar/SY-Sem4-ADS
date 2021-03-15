@@ -158,17 +158,17 @@ public class BST {
 
         // Direct Inputs ................
 
-        // tree.insertData(50); 
-        // tree.insertData(30); 
-        // tree.insertData(20); 
-        // tree.insertData(40); 
-        // tree.insertData(70); 
+        tree.insertData(15); 
+        tree.insertData(25); 
+        tree.insertData(35); 
+        tree.insertData(30); 
+        tree.insertData(40); 
         // tree.insertData(60); 
         // tree.insertData(80);
 
-        // System.out.print("Binary tree : ");
-        // tree.printTree(3);
-        // System.out.println();
+        System.out.print("Binary tree : ");
+        tree.printTree(3);
+        System.out.println();
 
         // System.out.print("\nAfter deleting 20 : ");
         // tree.deleteNode(20);
@@ -179,61 +179,61 @@ public class BST {
         // tree.printTree(3);
 
         // System.out.print("\nAfter deleting 50 : ");
-        // tree.deleteNode(50);
-        // tree.printTree(3);
+        tree.deleteNode(25);
+        tree.printTree(3);
 
-        while(true){
-            System.out.println("\n\nEnter the operration you want to perform :- ");
-            System.out.println("1) Insert  ");
-            System.out.println("2) Delete  ");
-            System.out.println("3) Print Inorder ");
-            System.out.println("4) Print Preorder ");
-            System.out.println("5) Print PostOrder ");
-            System.out.println("0) Exit  ");
-            System.out.print("Choice : ");
+    //     while(true){
+    //         System.out.println("\n\nEnter the operration you want to perform :- ");
+    //         System.out.println("1) Insert  ");
+    //         System.out.println("2) Delete  ");
+    //         System.out.println("3) Print Inorder ");
+    //         System.out.println("4) Print Preorder ");
+    //         System.out.println("5) Print PostOrder ");
+    //         System.out.println("0) Exit  ");
+    //         System.out.print("Choice : ");
 
-            int choice = input.nextInt();
+    //         int choice = input.nextInt();
 
-            if(choice == 0){
-                System.out.print("    Tree (Inorder) : ");
-                tree.printTree(3);
-                System.out.println("\nThank You");
-                System.exit(0);
-            }
-            else if (choice == 1){
-                System.out.print("\n    Enter number :- ");
-                int num = input.nextInt();
-                tree.insertData(num);
+    //         if(choice == 0){
+    //             System.out.print("    Tree (Inorder) : ");
+    //             tree.printTree(3);
+    //             System.out.println("\nThank You");
+    //             System.exit(0);
+    //         }
+    //         else if (choice == 1){
+    //             System.out.print("\n    Enter number :- ");
+    //             int num = input.nextInt();
+    //             tree.insertData(num);
 
-                System.out.print("    Updated tree (Inorder) : ");
-                tree.printTree(3);
-            }
-            else if (choice == 2){
-                System.out.print("\n    Enter number :- ");
-                int num = input.nextInt();
-                tree.deleteNode(num);
+    //             System.out.print("    Updated tree (Inorder) : ");
+    //             tree.printTree(3);
+    //         }
+    //         else if (choice == 2){
+    //             System.out.print("\n    Enter number :- ");
+    //             int num = input.nextInt();
+    //             tree.deleteNode(num);
 
-                System.out.print("    Updated tree (Inorder) : ");
-                tree.printTree(3);
-            }
-            else if (choice == 3){
-                System.out.print("    Inorder :- ");
-                tree.printTree(3);
-            }
-            else if (choice == 4){
-                System.out.print("    Preorder :- ");
-                tree.printTree(4);
-            }
-            else if (choice == 5){
-                System.out.print("    Postorder :- ");
-                tree.printTree(5);
-            }
+    //             System.out.print("    Updated tree (Inorder) : ");
+    //             tree.printTree(3);
+    //         }
+    //         else if (choice == 3){
+    //             System.out.print("    Inorder :- ");
+    //             tree.printTree(3);
+    //         }
+    //         else if (choice == 4){
+    //             System.out.print("    Preorder :- ");
+    //             tree.printTree(4);
+    //         }
+    //         else if (choice == 5){
+    //             System.out.print("    Postorder :- ");
+    //             tree.printTree(5);
+    //         }
             
-            input.close();
+    //         input.close();
 
-        }
+    //     }
 
-        // input.close();
+    //     // input.close();
     }
 
 }
