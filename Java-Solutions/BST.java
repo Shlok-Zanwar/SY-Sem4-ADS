@@ -233,7 +233,7 @@ public class BST {
 
     //     }
 
-    //     // input.close();
+        input.close();
     }
 
 }
