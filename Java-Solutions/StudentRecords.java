@@ -185,7 +185,8 @@ public class StudentRecords {
             switch (operation) {
                 case 1:
                     System.out.print("    Enter the (first) name : ");
-                    name = input.next();
+                    name = input.nextLine();
+                    name = input.nextLine();
                     System.out.print("    Enter the roll number  : ");
                     rollNo = input.nextInt();
 
