@@ -152,6 +152,10 @@ public class HashAssignment {
     }
     
 
+    boolean isStringOnlyAlphabet(String str){
+        return ((!str.equals("")) && (str != null) && (str.matches("^[a-zA-Z]*$")));
+    }
+
     public static void main(String[] args) {
         HashAssignment table = new HashAssignment();
         table.createInitialDict();
@@ -173,8 +177,13 @@ public class HashAssignment {
             if(operation == 1){
                 System.out.print("    Enter the word to be added : ");
                 str = input.next();
+                str = str.toLowerCase();
+                if(!table.isStringOnlyAlphabet(str)){
+                    System.out.println("    Invalid String !!!");
+                    continue;
+                }
                 if(!table.searchActual(str)){
-                    table.addToTable(str.toLowerCase());
+                    table.addToTable(str);
                     System.out.println("    " + str + " added to dictionary.");
                 }
                 else{
@@ -188,10 +197,15 @@ public class HashAssignment {
             else if(operation == 3){
                 System.out.print("    Enter the word : ");
                 str = input.next();
+                if(!table.isStringOnlyAlphabet(str)){
+                    System.out.println("    Invalid String !!!");
+                    continue;
+                }
                 System.out.print("    ");
                 System.out.println(table.searchLogic(str.toLowerCase()));
             }
             else if(operation == 0){
+                System.out.println("    Thank You !!!\n\n");
                 break;
             }
             else{
